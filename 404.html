@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Master Chef</title>
+    <script>
+      var parts = location.pathname.split("/").filter(Boolean)
+      if (parts.length > 1) parts = parts.slice(0, 1)
+      var base = parts.length ? "/" + parts.join("/") + "/" : "/"
+      location.replace(base + (location.hash || "#/"))
+    </script>
+  </head>
+  <body>
+    <p><a href="./">Master Chef</a></p>
+  </body>
+</html>

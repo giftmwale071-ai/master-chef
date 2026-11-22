@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f3eee6" />
+    <meta name="description" content="Master Chef is a Lusaka kitchen for Gift J. Mwale. Cook from the fridge, let the chef decide, remix a plate, and cook it step by step." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Master Chef" />
+    <title>Master Chef</title>
+    <script>
+      try {
+        var saved = JSON.parse(localStorage.getItem('master-chef.v1') || '{}')
+        var dark = saved.theme === 'dark' || (saved.theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-C1Ax50Ig.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-mP02t3V_.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
